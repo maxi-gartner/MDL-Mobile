@@ -52,4 +52,4 @@ buttonallPlay.addEventListener('click', () =>{
         }
     })
 
-    
+    console.log("hasta aca funciona")
