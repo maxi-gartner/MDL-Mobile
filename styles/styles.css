@@ -11,11 +11,11 @@ body{
 .title{
     color: goldenrod;
     text-align: center;
-    font-size: 18px;
 }
 .title H4{
     margin-left: 50px;
     text-decoration: underline goldenrod;
+    font-size: 18px;
 }
 .logo-rules{
     position: absolute;
