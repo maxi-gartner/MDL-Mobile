@@ -183,7 +183,8 @@ tr {
     border: none;
 }
 .DIV-rules,
-.DIV-about{
+.DIV-about,
+.DIV-form{
     background-color: rgba(187, 187, 187, 0.226);
     padding: 5px;
     margin-bottom: 5px;
@@ -198,4 +199,42 @@ tr {
 }
 .navbar-toggler{
     border: solid 1px goldenrod;;
+}
+form{
+    color: white;
+}
+.personal-data{
+    display: grid;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.personal-data label{
+    margin-left: 5px;
+}
+.options b{
+    margin-left: 5px;
+}
+.footer-form input{
+    width: 98%;
+}
+.send-form{
+    width: 250px;
+    border: solid 2px goldenrod;
+    border-radius: 5px;
+    background-color: aliceblue; 
+    color: black;
+}
+.button-send{
+    display: grid;
+    justify-items: center;
+}
+form button,
+form a{
+    margin-bottom: 10px;
+}
+form label{
+    margin-bottom: 5px;
+}
+form input::placeholder{
+    color: goldenrod;
 }
