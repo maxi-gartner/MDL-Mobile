@@ -182,7 +182,8 @@ tr {
 .button-map-close{
     border: none;
 }
-.DIV-rules{
+.DIV-rules,
+.DIV-about{
     background-color: rgba(187, 187, 187, 0.226);
     padding: 5px;
     margin-bottom: 5px;
