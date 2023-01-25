@@ -42,7 +42,7 @@
                         <a class="nav-link" href="../pages/game.html">Game</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/form.html">Form</a>    
+                        <a class="nav-link" style="background-color: rgba(187, 187, 187, 0.226);border-radius: 5px;">Registration</a>    
                     </li>
                 </ul>
                 </div>
@@ -50,32 +50,9 @@
             </div>
         </nav>
     </div>
-    <div class="img-home" style="height: 250px;">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="../assets/design1_image1.jpg" class="d-block w-100" style="margin-top: 32px;">
-                </div>
-                <div class="carousel-item" data-bs-interval="5000";>
-                    <img src="../assets/design1_image2.jpg" class="d-block w-100"  style="height: 250px ; margin-top: 20px;" >
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="../assets/hockey_3.jpg" class="d-block w-100" style="margin-top: 5px;">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-    </div>
 </div>
-                <div class="separatorRules">
-                    <h5>Registration Form</h5>
+                <div class="separatorRules" style="margin-top: 70px;">
+                    <h2>Registration Form</h2>
                 </div>
             <main>
                 <form>
@@ -92,7 +69,7 @@
                         <input type="text" id="zipCode" zipCode="zipCode" required placeholder="Insert Zip Code">
                         <label for="birthDate">Birth Date(dd/mm/yyyy)</label>
                         <input type="text" id="birthDate" zipCode="birthDate" required placeholder="Insert your Birth Date">
-                        <div class="conteinerFemele">
+                        <div class="conteinerFemele DIV-form">
                             <label for="femele">Gender:Femele</label>
                             <input type="checkbox">
                             <label for="male">Male</label>
@@ -100,10 +77,12 @@
                             <label for="male">N(X)</label>
                             <input type="checkbox">
                         </div>
-                        <div class="conteinerGrade">
+                        <div class="conteinerGrade DIV-form">
+                            <div class="dropdown">
                             <label for="grade">Grade</label>
                             <input type="checkbox">
-                            <label for="1st">Pre-School  </label>
+                            <div class="preschool">
+                                <label for="1st">Pre-School  </label>
                             <input type="checkbox"><sup>1st</sup>
                             <label for="2st"></label>
                             <input type="checkbox"><sup>2st</sup>
@@ -113,95 +92,43 @@
                             <input type="checkbox"><sup>4st</sup>
                             <label for="5st"></label>
                             <input type="checkbox"><sup>5st</sup>
+                            </div>
                         </div>
                     </div>
                     <div class="closest DIV-form">
-                        <a class="btn" id="closest">Closest School:</a>
+                        <h4>Closest School:</h4>
                         <h6>Which elementary school do you live near</h6>
-                        <p class="infoBtnShort" id="closest" style="display:block">Check the options</p>
-                            <div class="options infoBtn" style="display: none;" id="closest">
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="AJ Katzenmeier">AJ Katzenmeier</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="Greenbay">Greenbay</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="Howard a Yeager">Howard a Yeager</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="Marjorie P Hart">Marjorie P Hart</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="Nort Elementary">Nort Elementary</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="South Elementary">South Elementary</label>
-                                </div>
-                            </div>
+                        <select class="options-form" name="Pre-School" id="">
+                            <option value="">AJ Katzenmeier</option>
+                            <option value="">Greenbay</option>
+                            <option value="">Howard a Yeager</option>
+                            <option value="">Marjorie P Hart</option>
+                            <option value="">Nort Elementary</option>
+                            <option value="">South Elementary</option>
+                        </select>
                     </div>
                     <div class="position DIV-form">
-                        <a class="btn" id="position">Position Played:</a>
+                        <h4>Position Played:</h4>
                         <h6> What position(s) do you normally play? (check all that apply)</h6>
-                        <p class="infoBtnShort" id="position" style="display:block">Check the options</p>
-                            <div class="options infoBtn" style="display: none;"  id="position">
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="closest">Forward</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="closest">Defense</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="closest">Midfield</label>
-                                </div>
-                                <div class="conteinerClosest">
-                                    <input type="checkbox">
-                                    <label for="closest">Goalkeeper</label>
-                                </div>
-                            </div>
+                        <select class="options-form" name="Pre-School" id="">
+                            <option value="">Forward</option>
+                            <option value="">Defense</option>
+                            <option value="">Midfield</option>
+                            <option value="">Goalkeeper</option>
+                        </select>
                     </div>
                     <div class="uniform DIV-form">
-                        <a class="btn"  id="uniform"> Uniform Size: </a>
+                        <h4> Uniform Size: </h4>
                         <p class="infoBtnShort" id="uniform" style="display:block">Check the options</p>
-                        <div class="options infoBtn" style="display: none;"  id="uniform">
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Youth Smal</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Youth Medium</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Youth Large</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Small</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Medium</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Large</label>
-                            </div>
-                            <div class="conteinerClosest">
-                                <input type="checkbox">
-                                <label for="closest">Extra-Large</label>
-                            </div>
-                        </div>
+                        <select class="options-form" name="Pre-School" id="">
+                            <option value="">Youth Smal</option>
+                            <option value="">Youth Medium</option>
+                            <option value="">Youth Large</option>
+                            <option value="">Small</option>
+                            <option value="">Medium</option>
+                            <option value="">Large</option>
+                            <option value="">Extra-Large</option>
+                        </select>
                         
                         </div>
                         <div class="DIV-form">
@@ -213,17 +140,17 @@
                                 By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
                             </div>
                             <div class="footer-form options">
-                            <div class="ConteinerSign">
-                                <label for="sign"> Parent/GuardianSignature:</label>  
-                                <input type="text" id="sign" sign="sign" required placeholder= "">
-                            </div>
-                            <div class="ConteinerDate">
-                                <label for="date">Date:</label>  
-                                <input type="text" id="date" date="date" required placeholder= "">
+                                <div class="ConteinerSign">
+                                    <label for="sign"> Parent/GuardianSignature:</label>  
+                                    <input type="text" id="sign" sign="sign" required placeholder= "">
+                                </div>
+                                <div class="ConteinerDate">
+                                    <label for="date">Date:</label>  
+                                    <input type="text" id="date" date="date" required placeholder= "">
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="button-send">
+                        <div class="button-send ">
                             <input type="submit" value="Signature of the person in charge" class="send-form" >
                         </div>
                 </form>
